@@ -4,51 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinti Laser Clean | Limpieza Láser Profesional</title>
-    <meta name="description" content="Especialistas en limpieza láser de fachadas, monumentos y eliminación de grafitis en Alicante. Tecnología de precisión sin químicos.">
+    <meta name="description" content="Servicios de limpieza láser profesional para fachadas, anti-grafitis y patrimonio histórico en Alicante.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pinti Laser Clean">
+    <meta property="og:description" content="Limpieza láser profesional para fachadas, anti-grafitis y patrimonio histórico.">
+    <meta property="og:image" content="https://socioclaw-sys.github.io/pinti-laser-clean-alicante/assets/images/fachada-historica.jpg">
+    <meta property="og:site_name" content="Pinti Laser Clean">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pinti Laser Clean">
+    <meta name="twitter:description" content="Limpieza láser profesional.">
+    <meta name="twitter:image" content="https://socioclaw-sys.github.io/pinti-laser-clean-alicante/assets/images/fachada-historica.jpg">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Pinti Laser Clean",
+        "address": {"@type": "PostalAddress", "addressLocality": "Alicante"},
+        "service": [{"@type": "Service", "name": "Limpieza Láser", "description": "Eliminación de grafitis, fachadas, patrimonio"}]
+    }
+    </script>
+    <link rel="canonical" href="https://socioclaw-sys.github.io/pinti-laser-clean-alicante/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #0f2c3d; --accent: #e85d04; --light: #f4f5f7; --dark: #1a1a1a; }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Open Sans', sans-serif; background: #ffffff; color: var(--dark); line-height: 1.6; }
-        header { background-color: var(--primary); color: #fff; padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: 1px; }
-        .logo span { color: var(--accent); }
-        nav a { color: #fff; text-decoration: none; margin-left: 2rem; font-weight: 600; font-size: 0.9rem; transition: color 0.3s; }
-        nav a:hover { color: var(--accent); }
-        .hero { background: linear-gradient(rgba(15, 44, 61, 0.85), rgba(15, 44, 61, 0.9)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: #fff; text-align: center; padding: 8rem 2rem; }
-        .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; text-transform: uppercase; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.9; }
-        .btn { background-color: var(--accent); color: #fff; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.3s, box-shadow 0.3s; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        section { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
-        .section-header { text-align: center; margin-bottom: 3rem; }
-        .section-header h2 { font-size: 2.2rem; color: var(--primary); margin-bottom: 0.5rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .card { background: var(--light); padding: 2.5rem; border-radius: 10px; text-align: center; transition: transform 0.3s; border: 1px solid #eee; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .card i { font-size: 3rem; color: var(--accent); margin-bottom: 1rem; }
-        .card h3 { color: var(--primary); margin-bottom: 1rem; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .gallery-item { height: 250px; border-radius: 10px; overflow: hidden; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
-        .gallery-item:hover img { transform: scale(1.05); }
-        .gallery-label { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(15, 44, 61, 0.9); color: #fff; padding: 1rem; text-align: center; font-weight: 600; }
-        .contact-box { background: var(--light); padding: 2.5rem; border-radius: 10px; max-width: 600px; margin: 0 auto; text-align: center; }
-        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
-        .whatsapp-float:hover { transform: scale(1.1); }
-        footer { background: var(--dark); color: #aaa; text-align: center; padding: 2rem; margin-top: 3rem; }
-        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } nav { display: none; } }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,sans-serif}
+        body{background:#0a0a0a;color:#f0f0f0;line-height:1.6}
+        header{background:linear-gradient(135deg,#0f0f0f 0%,#1a1a1a 100%);padding:2rem 0;text-align:center}
+        h1{font-size:3rem;margin-bottom:1rem;background:linear-gradient(90deg,#00d4ff,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .cta{display:inline-block;padding:1rem 2rem;background:#00ff88;color:#000;text-decoration:none;border-radius:50px;font-weight:bold;margin-top:1rem}
+        section{padding:4rem 2rem;max-width:1200px;margin:0 auto}
+        .servicios{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem}
+        .card{background:#1a1a1a;padding:2rem;border-radius:15px;border:1px solid #333;transition:all 0.3s}
+        .card:hover{border-color:#00ff88;transform:translateY(-5px)}
+        footer{background:#0f0f0f;padding:2rem;text-align:center}
+        @media(max-width:600px){h1{font-size:2rem}}
     </style>
 </head>
 <body>
-    <header><div class="logo">Pinti<span>Laser</span></div><nav><a href="#servicios">Servicios</a><a href="#galeria">Trabajos</a><a href="#contacto">Contacto</a></nav></header>
-    <section class="hero"><h1>Limpieza Láser Profesional</h1><p>Restauración de fachadas y eliminación de grafitis con tecnología de precisión. Cuidamos la piedra, el ladrillo y tu patrimonio.</p><a href="https://wa.me/34673532947" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Presupuesto Rápido</a></section>
-    <section id="servicios"><div class="section-header"><h2>Nuestros Servicios</h2><p>Soluciones ecológicas y definitivas para la limpieza de tus espacios</p></div><div class="services-grid"><div class="card"><i class="fas fa-building"></i><h3>Fachadas</h3><p>Limpieza profunda de edificios, plazas y centros históricos sin usar agua corrosiva ni arena.</p></div><div class="card"><i class="fas fa-spray-can"></i><h3>Anti-Grafitis</h3><p>Eliminación total de pintadas en superficies vulnerables, recuperando el aspecto original.</p></div><div class="card"><i class="fas fa-monument"></i><h3>Patrimonio Histórico</h3><p>Intervenciones especializadas en monumentos, iglesias y elementos arquitectónicos delicados.</p></div></div></section>
-    <section id="galeria"><div class="section-header"><h2>Galería de Trabajos</h2><p>Antes y después de nuestras intervenciones</p></div><div class="gallery-grid"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Limpieza fachada histórica"><div class="gallery-label">Fachada Histórica Alicante</div></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1513475382585-d06e58de9ee8?auto=format&fit=crop&w=800&q=80" alt="Grafiti eliminado"><div class="gallery-label">Eliminación de Grafiti</div></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1487958449943-4a2227b4a8a9?auto=format&fit=crop&w=800&q=80" alt="Restauración monumento"><div class="gallery-label">Restauración Monumento</div></div></div></section>
-    <section id="contacto"><div class="section-header"><h2>Solicita tu Visita y Presupuesto</h2><p>Sin compromiso. Te respondemos en menos de 24 horas.</p></div><div class="contact-box"><p style="margin-bottom: 1.5rem;"><i class="fas fa-phone" style="color: var(--accent);"></i> <strong>Llámanos o escríbenos:</strong> <span style="font-size: 1.2rem; color: var(--primary);">(+34) 673 53 29 47</span></p><form><input type="text" placeholder="Nombre Completo" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;" required><input type="email" placeholder="Email" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;" required><textarea placeholder="Describe tu proyecto..." style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; height: 100px;" required></textarea><button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Enviar Solicitud</button></form></div></section>
-    <a href="https://wa.me/34673532947" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <footer><p>© 2026 Pinti Laser Clean. Todos los derechos reservados.</p><p style="font-size: 0.8rem; margin-top: 0.5rem;">Diseñado para Alicante y provincia.</p></footer>
+    <header>
+        <h1>Pinti Laser Clean</h1>
+        <p>Limpieza Láser Profesional - Alicante</p>
+        <a href="https://wa.me/34673532947" class="cta">📞 WhatsApp</a>
+    </header>
+    <section id="servicios">
+        <h2 style="text-align:center;font-size:2rem;margin-bottom:2rem">Servicios</h2>
+        <div class="servicios">
+            <div class="card"><h3>🏢 Fachadas</h3><p>Limpieza profunda de superficies exteriores.</p></div>
+            <div class="card"><h3>🖌️ Anti-Grafitis</h3><p>Eliminación permanente de pintadas.</p></div>
+            <div class="card"><h3>🏛️ Patrimonio</h3><p>Restauración de monumentos históricos.</p></div>
+        </div>
+    </section>
+    <footer>
+        <p>Pinti Laser Clean &copy; 2026 | Alicante, España</p>
+        <p><a href="tel:+34673532947">+34 673 53 29 47</a></p>
+    </footer>
 </body>
 </html>
