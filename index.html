@@ -1,36 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pinti Laser Clean - Alicante</title>
-<style>
-body{font-family:system-ui,sans-serif;margin:0;padding:20px;background:#f8fafc;color:#1e3a8a}
-.hero{background:linear-gradient(135deg,#1e3a8a,#f97316);color:#fff;padding:40px 20px;text-align:center}
-.btn{background:#f97316;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;display:inline-block;margin:20px auto}
-section{margin:20px 0;background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinti Laser Clean - Limpieza Láser Profesional en Alicante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0A2A4A;
+            --accent: #F97316;
+            --light: #F8F9FA;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--light);
+            color: #333;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 1.5rem; }
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .service-card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+        .service-card h3 { color: var(--primary); margin: 0.5rem 0; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
 </head>
 <body>
-<div class="hero">
-  <h1>🔵 Pinti Laser Clean</h1>
-  <p>Limpieza láser profesional de fachadas en Alicante</p>
-  <a href="https://wa.me/653680932" class="btn">Presupuesto Gratis</a>
-</div>
-<section>
-  <h2>✅ ¿Por qué láser?</h2>
-  <ul>
-    <li>Precisión milimétrica sin químicos</li>
-    <li>Ecológico y no abrasivo</li>
-    <li>Ideal para fachadas históricas</li>
-  </ul>
-</section>
-<section>
-  <h2>💰 Precios</h2>
-  <p><strong>Desde 200€/m²</strong> (competitivo en Alicante)</p>
-</section>
-<footer style="text-align:center;color:#64748b;margin-top:40px">
-  Limpieza láser profesional - Alicante, España
-</footer>
+    <header>
+        <h1><i class="fas fa-lightbulb"></i> Pinti Laser Clean</h1>
+    </header>
+
+    <section class="hero">
+        <h1>Limpieza Láser Profesional</h1>
+        <p>Especialistas en fachadas, grafitis y monumentos en Alicante</p>
+        <a href="https://wa.me/653680932" class="btn">
+            <i class="fab fa-whatsapp"></i> Presupuesto Gratis
+        </a>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <i class="fas fa-building"></i>
+            <h3>Fachadas</h3>
+            <p>✓ Sin químicos<br>✓ Precisión milimétrica<br>✓ Ecológico</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-spray-can"></i>
+            <h3>Grafitis</h3>
+            <p>✓ Sin residuos<br>✓ Rápido<br>✓ Económico</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-monument"></i>
+            <h3>Monumentos</h3>
+            <p>✓ Históricos<br>✓ Mínimo riesgo<br>✓ Garantizado</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Pinti Laser Clean - Alicante, España</p>
+        <p>WhatsApp: +34 653 680 932</p>
+    </footer>
 </body>
 </html>
